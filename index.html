@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+    .navbar {
+      background-color: #333;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      color: red;
+    }
+
+    /* MAIN SECTION */
+    .pa {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-top: 120px;
+    }
+
+    .adhi {
+      color: red;
+      font-size: 3rem;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .btn1 {
+      display: block;
+      margin: 25px auto;
+      padding: 10px 20px;
+      border: 1px solid red;
+      background: transparent;
+      color: red;
+      cursor: pointer;
+      transition: 0.5s ease;
+    }
+
+    .btn1:hover {
+      background:#00C853;
+      color: black;
+    }
+
+    .img {
+      display:block;
+      margin: 30px auto;
+      width: 50px;
+
+    }
+
+    .img:hover {
+      transform: scale(1.5);
+      transition: 0.3s ease;
+    }
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 600px) {
+
+      .pa {
+        font-size: 1.8rem;
+        margin-top: 80px;
+      }
+
+      .adhi {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0 15px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#" style="border:10px;
+    padding:10px;" margin:20;>Profile</a>
+    <a href="#">Qualification</a>
+  </div>
+
+  <h1 class="pa">
+    Hi, my name is 
+    <span class="adhi">Adhi</span>
+  </h1>
+
+  <p>I am a mid-range web developer</p>
+
+  <button class="btn1">Download Resume</button>
+
+  <a href="https://www.instagram.com/_adhi_xy/" target="_blank">
+    <img src="https://wallpapers.com/images/high/instagram-black-background-720-x-1520-zqziwb8f1npobi06.webp" class="img">
+  </a>
+
+</body>
+</html>
