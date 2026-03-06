@@ -1,210 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adhi | Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
 
-<style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI, sans-serif;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+    .navbar {
+      background-color: #333;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+    }
 
-body{
-height:100vh;
-background:linear-gradient(270deg,#000000,#0f2027,#000000);
-background-size:400% 400%;
-animation:bgMove 10s infinite alternate;
-color:white;
-overflow:hidden;
-}
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
 
-/* animated background */
-@keyframes bgMove{
-0%{background-position:left;}
-100%{background-position:right;}
-}
+    .navbar a:hover {
+      color: red;
+    }
 
-/* NAVBAR */
+    /* MAIN SECTION */
+    .pa {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-top: 120px;
+    }
 
-.navbar{
-display:flex;
-justify-content:space-between;
-padding:20px 40px;
-background:rgba(0,0,0,0.4);
-backdrop-filter:blur(10px);
-}
+    .adhi {
+      color: red;
+      font-size: 3rem;
+    }
 
-.navbar a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-size:18px;
-transition:0.4s;
-}
+    p {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
 
-.navbar a:hover{
-color:#00ffcc;
-text-shadow:0 0 10px #00ffcc;
-}
+    .btn1 {
+      display: block;
+      margin: 25px auto;
+      padding: 10px 20px;
+      border: 1px solid red;
+      background: transparent;
+      color: red;
+      cursor: pointer;
+      transition: 0.5s ease;
+    }
 
-/* MAIN */
+    .btn1:hover {
+      background:#00C853;
+      color: black;
+    }
 
-.container{
-text-align:center;
-margin-top:140px;
-animation:fade 2s ease;
-}
+    .img {
+      display:block;
+      margin: 30px auto;
+      width: 50px;
 
-@keyframes fade{
-from{opacity:0; transform:translateY(40px);}
-to{opacity:1; transform:translateY(0);}
-}
+    }
 
-.title{
-font-size:3rem;
-}
+    .img:hover {
+      transform: scale(1.5);
+      transition: 0.3s ease;
+    }
 
-.name{
-color:#00ffcc;
-text-shadow:0 0 15px #00ffcc;
-font-size:3.5rem;
-animation:glow 2s infinite alternate;
-}
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 600px) {
 
-@keyframes glow{
-from{text-shadow:0 0 5px #00ffcc;}
-to{text-shadow:0 0 25px #00ffcc;}
-}
+      .pa {
+        font-size: 1.8rem;
+        margin-top: 80px;
+      }
 
-.subtitle{
-margin-top:15px;
-color:#ccc;
-font-size:1.2rem;
-}
+      .adhi {
+        font-size: 2.2rem;
+      }
 
-/* BUTTON */
+      p {
+        font-size: 1rem;
+        padding: 0 15px;
+      }
 
-.btn{
-margin-top:30px;
-padding:12px 25px;
-border:2px solid #00ffcc;
-background:transparent;
-color:#00ffcc;
-font-size:16px;
-cursor:pointer;
-transition:0.4s;
-border-radius:30px;
-}
+    }
 
-.btn:hover{
-background:#00ffcc;
-color:black;
-box-shadow:0 0 20px #00ffcc;
-transform:scale(1.1);
-}
-
-/* SOCIAL ICON */
-
-.social{
-margin-top:40px;
-}
-
-.social img{
-width:50px;
-transition:0.4s;
-filter:invert(1);
-}
-
-.social img:hover{
-transform:scale(1.4) rotate(10deg);
-}
-
-/* FLOATING CIRCLE */
-
-.circle{
-position:absolute;
-width:200px;
-height:200px;
-border-radius:50%;
-background:radial-gradient(#00ffcc,transparent);
-top:20%;
-left:10%;
-animation:float 6s infinite ease-in-out;
-}
-
-@keyframes float{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-40px);}
-}
-
-.circle2{
-position:absolute;
-width:150px;
-height:150px;
-border-radius:50%;
-background:radial-gradient(#ff00ff,transparent);
-bottom:10%;
-right:10%;
-animation:float 7s infinite ease-in-out;
-}
-
-/* MOBILE */
-
-@media(max-width:600px){
-
-.title{font-size:2rem;}
-.name{font-size:2.5rem;}
-
-.navbar{
-flex-direction:column;
-align-items:center;
-}
-
-}
-
-</style>
+  </style>
 </head>
-
 <body>
+  <div class="navbar">
+    <a href="#" style="border:10px;
+    padding:10px;" margin:20;>Profile</a>
+    <a href="https://github.com/saadhinath/Resume-/blob/main/1760945237550.jpg?raw=true">Qualification</a>
+  </div>
 
-<div class="circle"></div>
-<div class="circle2"></div>
+  <h1 class="pa">
+    Hi, my name is 
+    <span class="adhi">Adhi</span>
+  </h1>
 
-<div class="navbar">
-<div>🚀 Adhi Dev</div>
+  <p>I am a mid-range web developer</p>
 
-<div>
-<a href="#">Profile</a>
-<a href="#">Projects</a>
-<a href="#">Qualification</a>
-<a href="#">Contact</a>
-</div>
-</div>
+  <button class="btn1">Download Resume</button>
 
-<div class="container">
-
-<h1 class="title">
-Hi, I'm <span class="name">Adhi</span>
-</h1>
-
-<p class="subtitle">
-Futuristic Web Developer • UI Designer • Creative Coder
-</p>
-
-<button class="btn">Download Resume</button>
-
-<div class="social">
-<a href="https://www.instagram.com/_adhi_xy/" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-</a>
-</div>
-
-</div>
+  <a href="https://www.instagram.com/_adhi_xy/" target="_blank">
+    <img src="https://wallpapers.com/images/high/instagram-black-background-720-x-1520-zqziwb8f1npobi06.webp" class="img">
+  </a>
 
 </body>
 </html>
